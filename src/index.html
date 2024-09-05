@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <header class="bg-blue-600 text-white py-4">
+        <h1 class="text-4xl font-bold text-center">Modul 323 – Weather App</h1>
+    </header>
+
+    <main class="flex-grow flex flex-col items-center justify-center">
+        <div>
+
+            <div class="flex mb-4">
+                <input 
+                    id="locationInput" 
+                    type="text" 
+                    placeholder="Enter location..." 
+                    class="border p-3 flex-grow text-lg"
+                />
+                <button 
+                    id="addButton" 
+                    class="bg-blue-500 text-white py-2 px-4 ml-2 rounded hover:bg-blue-600 text-lg"
+                >
+                    Add
+                </button>
+            </div>
+
+            <table class="w-full text-left table-auto border-collapse text-lg">
+                <thead>
+                    <tr>
+                        <th class="border px-4 py-2">Location</th>
+                        <th class="border px-4 py-2">Temp</th>
+                        <th class="border px-4 py-2">Low</th>
+                        <th class="border px-4 py-2">High</th>
+                        <th class="border px-4 py-2">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="locationList">
+                    <!-- Locations will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p class="text-lg">&copy Nezir Emre Sen</p>
+    </footer>
+
+    <script src="index.js"></script> 
+</body>
+</html>
