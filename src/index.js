@@ -14,9 +14,9 @@ const addLocationRow = (location, temp, low, high) => {
     const row = document.createElement('tr');
     row.innerHTML = `
         <td class="border px-4 py-2">${location}</td>
-        <td class="border px-4 py-2">${Math.round(temp)}°C</td>  <!-- Burada temp yuvarlandı -->
-        <td class="border px-4 py-2">${Math.round(low)}°C</td>   <!-- Burada low yuvarlandı -->
-        <td class="border px-4 py-2">${Math.round(high)}°C</td>  <!-- Burada high yuvarlandı -->
+        <td class="border px-4 py-2">${Math.round(temp)}°C</td>  
+        <td class="border px-4 py-2">${Math.round(low)}°C</td>   
+        <td class="border px-4 py-2">${Math.round(high)}°C</td>  
         <td class="border px-4 py-2">
             <button class="bg-red-500 text-white py-1 px-2 rounded hover:bg-red-600">Delete</button>
         </td>
